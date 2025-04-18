@@ -9,5 +9,9 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      var path = window.location.pathname.split("/");
+      if (path.length > 2) window.location.replace("/multi-project-repo/");
+    </script>
   </body>
 </html>
